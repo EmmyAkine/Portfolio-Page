@@ -1,0 +1,131 @@
+:root {
+  --bg: #0f172a;
+  --bg-soft: #020617;
+  --card: #020617;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-2: #22c55e;
+}
+
+[data-theme="light"] {
+  --bg: #f8fafc;
+  --bg-soft: #e5e7eb;
+  --card: #ffffff;
+  --text: #020617;
+  --muted: #475569;
+  --accent: #0284c7;
+  --accent-2: #16a34a;
+}
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, var(--bg), var(--bg-soft));
+  color: var(--text);
+  line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
+  padding-top: 80px; /* space for fixed header */
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 1.5rem;
+}
+
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: none; }
+
+p { color: var(--muted); }
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #38BDF8;
+}
+
+h3 { font-size: 1.1rem; margin-bottom: 0.4rem; }
+
+.btn {
+  padding: 0.85rem 1.4rem;
+  border-radius: 0.75rem;
+  background: var(--accent);
+  color: #020617;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(56,189,248,0.25);
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(56,189,248,0.4);
+}
+
+section { margin-top: 4rem; }
+    
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); max-width: 900px; margin-left: auto; margin-right: auto; }
+
+.card{
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border: 1px solid rgba(148,163,184,0.15);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, border 0.2s ease; 
+  text-align: center;
+  width: 300px;
+}
+
+.card-elements-container{
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  margin-top: 0.8rem;
+}
+
+.card-elements-group{
+  display: grid;
+  row-gap: 1rem;
+}
+
+.card-elements-flex{
+  display: flex;
+  column-gap: .1rem;
+}
+
+.card-elements-flex div{
+  justify-items: left;
+}
+
+.card-elements-flex div p{
+  padding-left: 0.5rem;
+}
+
+
+.card:hover,
+.skill-card.active:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56,189,248,0.5);
+}
+
+footer {
+  margin-top: 5rem;
+  padding: 2.5rem 0;
+  border-top: 1px solid rgba(148,163,184,0.15);
+  text-align: center;
+}

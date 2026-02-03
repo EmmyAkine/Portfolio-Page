@@ -1,0 +1,13 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.socials a {
+  font-size: 1.3rem;
+  color: var(--muted);
+}
+
+.socials a:hover { color: var(--accent); }

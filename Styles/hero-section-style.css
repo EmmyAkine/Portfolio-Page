@@ -1,0 +1,46 @@
+.hero-section {
+  display: grid;
+  gap: 1.5rem;
+  padding: 4rem 0 3rem;
+  text-align: center;
+  justify-items: center;
+}
+
+.hero-image{
+  width:220px;
+  height:220px;
+  object-fit:cover;
+  border-top-left-radius:10rem;
+  border-top-right-radius:10rem;
+  border-bottom-left-radius:1.2rem;
+  border-bottom-right-radius:1.2rem;
+  border:2px solid rgba(56,189,248,0.4); 
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(56,189,248,0.15);
+  color: var(--accent);
+  font-size: 0.8rem;
+  width: fit-content;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.2;
+}
+
+.highlight{
+  font-weight: 700;
+  color: rgb(56, 189, 248);
+}
+
+.cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.8rem;
+  justify-content: center;
+}
