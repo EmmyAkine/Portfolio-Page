@@ -69,6 +69,11 @@ h3 { font-size: 1.1rem; margin-bottom: 0.4rem; }
   border: 1px solid rgba(56,189,248,0.4);
 }
 
+.btn.secondary.contact-btn {
+  margin-top:0.2rem; 
+  align-self: flex-start;
+}
+
 section { margin-top: 4rem; }
     
 .grid {
@@ -76,7 +81,7 @@ section { margin-top: 4rem; }
   gap: 1.5rem;
 }
 
-.grid-2 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-left: auto; margin-right: auto; align-items: center; }
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); max-width: 900px; margin-left: auto; margin-right: auto; }
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); max-width: 900px; margin-left: auto; margin-right: auto; }
 
 .card{
@@ -128,4 +133,10 @@ footer {
   padding: 2.5rem 0;
   border-top: 1px solid rgba(148,163,184,0.15);
   text-align: center;
+}
+
+.contact-card{
+  min-height: 100px; 
+  justify-content: space-between; 
+  text-align: left;
 }
