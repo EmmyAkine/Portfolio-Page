@@ -74,7 +74,7 @@ h3 { font-size: 1.1rem; margin-bottom: 0.4rem; }
   align-self: flex-start;
 }
 
-section { margin-top: 4rem; }
+section { margin-top: 4rem; scroll-margin-top: 5rem; }
     
 .grid {
   display: grid;
