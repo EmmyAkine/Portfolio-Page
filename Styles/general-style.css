@@ -128,13 +128,6 @@ section { margin-top: 4rem; }
   border-color: rgba(56,189,248,0.5);
 }
 
-footer {
-  margin-top: 5rem;
-  padding: 2.5rem 0;
-  border-top: 1px solid rgba(148,163,184,0.15);
-  text-align: center;
-}
-
 .contact-card{
   min-height: 100px; 
   justify-content: space-between; 
