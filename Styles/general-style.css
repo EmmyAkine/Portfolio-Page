@@ -21,7 +21,7 @@
 * { box-sizing: border-box; padding: 0; margin: 0; }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Sora', 'Inter', sans-serif;
   background: linear-gradient(180deg, var(--bg), var(--bg-soft));
   color: var(--text);
   line-height: 1.6;
@@ -114,7 +114,8 @@ section { margin-top: 4rem; }
 }
 
 .card-elements-flex div{
-  justify-items: left;
+  justify-items: flex-start;
+  text-align: start;
 }
 
 .card-elements-flex div p{

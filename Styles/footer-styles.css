@@ -6,11 +6,12 @@
 }
 
 footer {
-  background-color: black
+  background-color: rgb(100, 203, 247);
 }
 
 .footer-title{
   margin-bottom: 2rem;
+  font-size: large;
 }
 
 .footer-list{
@@ -25,12 +26,18 @@ ul{
   padding: 1rem;
 }
 
+.footer-list-item,
+.footer-title{
+  color: #0D1427;
+}
+
 .footer-texts{
   display: block;
   margin-top: 4.5rem;
   text-align: center;
   font-size: smaller;
   font-style: italic;
+  color: #0D1427;
 }
 .socials {
   display: flex;
