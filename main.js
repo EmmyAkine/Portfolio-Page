@@ -52,3 +52,28 @@ skillTabs.forEach(tab => {
     }
   });
 });
+
+const form = document.getElementById('contactForm');
+const status = document.getElementById('formStatus');
+
+if (form) {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      form.reset();
+      status.style.display = 'block';
+    } else {
+      status.textContent = "Something went wrong. Try again.";
+      status.style.display = 'block';
+    }
+  });
+}

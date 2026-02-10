@@ -452,12 +452,17 @@
             <!-- CONTACT FORM (VISUAL ONLY) -->
             <div class="card contact-card">
               <h3 style="margin-bottom:1rem;">Write me your project.</h3>
-              <form>
+              <form action="https://formspree.io/f/mwvnpvag" method="post" id="contactForm">
                 <div style="display:grid; gap:1rem;">
-                  <input type="text" placeholder="Name" style="padding:0.8rem; border-radius:0.6rem; border:1px solid rgba(148,163,184,0.3); background:transparent; color:var(--text);" />
-                  <input type="email" placeholder="Email" style="padding:0.8rem; border-radius:0.6rem; border:1px solid rgba(148,163,184,0.3); background:transparent; color:var(--text);" />
-                  <textarea rows="5" placeholder="Write your Project" style="padding:0.8rem; border-radius:0.6rem; border:1px solid rgba(148,163,184,0.3); background:transparent; color:var(--text); height: 280px;"></textarea>
-                  <button type="button" class="btn" style="align-self:flex-start;">Send Message</button>
+                  <input type="text" name="name" placeholder="Name" required style="padding:0.8rem; border-radius:0.6rem; border:1px solid rgba(148,163,184,0.3); background:transparent; color:var(--text);" />
+                  <input type="email" name="email" placeholder="Email" required style="padding:0.8rem; border-radius:0.6rem; border:1px solid rgba(148,163,184,0.3); background:transparent; color:var(--text);" />
+                  <textarea rows="5" name="message" placeholder="Write your Project" required style="padding:0.8rem; border-radius:0.6rem; border:1px solid rgba(148,163,184,0.3); background:transparent; color:var(--text); height: 280px;"></textarea>
+                  <button type="submit" class="btn" style="align-self:flex-start; font-family: inherit;">Send Message</button>
+                
+                  <p id="formStatus" style="color:var(--accent); display:none;">
+                    ✅ Message sent successfully!
+                  </p>
+
                 </div>
               </form>
             </div>
