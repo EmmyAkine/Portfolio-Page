@@ -1,0 +1,85 @@
+/* Contact Section Specific Styles */
+
+#contact .grid.grid-2 {
+  width: 100%;
+  max-width: 900px;
+}
+
+@media (max-width: 900px) {
+  #contact > div {
+    display: block !important;
+  }
+  
+  #contact .grid.grid-2 {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  
+  #contact .grid.grid-2 > div:first-child {
+    max-width: 100% !important;
+  }
+}
+
+/* Contact cards container */
+#contact .grid.grid-2 > div:first-child {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  #contact .grid.grid-2 > div:first-child {
+    grid-template-columns: 1fr;
+    margin: 0 auto 1.5rem;
+  }
+}
+
+/* Contact form card */
+#contact .contact-card {
+  width: 100%;
+}
+
+/* Form input styles for better mobile experience */
+#contact input,
+#contact textarea {
+  width: 100%;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+@media (max-width: 768px) {
+  #contact input,
+  #contact textarea {
+    font-size: 0.95rem;
+    padding: 0.7rem !important;
+  }
+  
+  #contact textarea {
+    height: 200px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact input,
+  #contact textarea {
+    font-size: 0.9rem;
+  }
+  
+  #contact button[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* Ensure contact cards don't exceed viewport */
+@media (max-width: 480px) {
+  .contact-card h3 {
+    font-size: 1rem;
+  }
+  
+  .contact-card p {
+    font-size: 0.9rem;
+  }
+  
+  .contact-card .btn {
+    font-size: 0.85rem;
+  }
+}

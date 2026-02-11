@@ -10,6 +10,12 @@
   z-index: 1000;
 }
 
+@media (max-width: 768px) {
+  .site-header {
+    height: 60px;
+  }
+}
+
 [data-theme="light"] .site-header {
   background: rgba(248, 250, 252, 0.85);
 }
@@ -22,6 +28,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    height: 60px;
+  }
 }
 
 .logo {
