@@ -7,6 +7,11 @@
 }
 
 .hero-image{
+  margin-top:1.5rem;
+
+}
+
+.hero-image img{
   width:220px;
   height:220px;
   object-fit:cover;
@@ -14,7 +19,8 @@
   border-top-right-radius:10rem;
   border-bottom-left-radius:1.2rem;
   border-bottom-right-radius:1.2rem;
-  border:2px solid rgba(56,189,248,0.4); 
+  border:2px solid rgba(56,189,248,0.4);
+  object-position: 50% 0%;
 }
 
 .badge {

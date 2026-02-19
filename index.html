@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="Styles/footer-styles.css">
     <link rel="stylesheet" href="Styles/contact-style.css">
 
-    <link rel="icon" type="image/png" href="Images/unnamed.png">
+    <link rel="icon" type="image/png" href="Asset/Images/favicon.png">
 
 
     <script src="main.js" defer></script>
@@ -48,8 +48,8 @@
     <div class="container">
       <header class="hero-section">
         <span class="badge">👋 Hello, I’m</span>
-        <div class="hero-image" style="margin-top:1.5rem;">
-          <img class="hero-image" src="Images/Snapchat-55578286.avif" alt="Profile photo placeholder">
+        <div class="hero-image">
+          <img src="Asset/Images/Portrait.avif" alt="Profile photo placeholder">
         </div>
         <h1>Oyebamiji Emmanuel Damilare</h1>
         <span class="badge">🎮 Gameplay Programmer</span>
@@ -62,7 +62,7 @@
         </p>
 
         <div class="cta">
-          <a download target="_blank" href="Asset/EmmanuelDamilareOyebamijiResume (3).pdf" class="btn">Download CV</a>
+          <a download target="_blank" href="Asset/EmmanuelDamilareOyebamijiResume.pdf" class="btn">Download CV</a>
           <a href="#about" class="btn secondary">About Me</a>
         </div>
       </header>
@@ -77,7 +77,7 @@
         <div class="about-layout">
           <!-- IMAGE -->
           <div class="about-image">
-            <img src="Images/IMG_7539.JPG.avif" alt="About me photo placeholder" />
+            <img src="Asset/Images/Full Portrait.avif" alt="About me photo placeholder" />
           </div>
 
           <!-- CONTENT -->
@@ -355,37 +355,92 @@
         </div>
 
         <div class="projects-grid">
+          <!-- 2D PROJECTS -->
           <!-- PROJECT CARD -->
           <article class="project-card" data-category="2d">
             <div class="project-media">
-              <img src="https://picsum.photos/800/600?random=1" alt="Project screenshot" />
-              <div class="project-hover">
-                <span>View Case Study →</span>
-              </div>
+              <img src="Asset/GameCover/Maze-of-the-hollow.avif" alt="Project screenshot" />
             </div>
             <div class="project-info">
-              <h3>GRAVITY SHIFT</h3>
-              <p>Mobile physics-puzzler built with Unity. Optimized for low-end Android devices.</p>
+              <h3>MAZE OF THE HOLLOW</h3>
+              <p>Unity-built maze escape prototype blending recursive backtracking mazes with chase-driven gameplay.</p>
               <div class="project-tags">
                 <span>C#</span><span>Unity</span><span>2D</span>
               </div>
+            </div>
+            <div class="project-hover">
+              <a href="https://emmydev-06.itch.io/maze-of-the-hollow" target="_blank" rel="noopener noreferrer">Play on Itch.io →</a>
+            </div>
+          </article>
+
+          <!-- PROJECT CARD -->
+          <article class="project-card" data-category="2d">
+            <div class="project-media">
+              <img src="Asset/GameCover/Pong.avif" alt="Project screenshot" />
+            </div>
+            <div class="project-info">
+              <h3>PONG GAME (Remake)</h3>
+              <p>Unity-built Pong remake featuring C#-powered game mechanics, precise collision detection, and real-time player input handling.</p>
+              <div class="project-tags">
+                <span>C#</span><span>Unity</span><span>2D</span>
+              </div>
+            </div>
+            <div class="project-hover">
+              <a href="https://github.com/EmmyAkine/Pong-Game-File" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+            </div>
+          </article>
+
+          <!-- PROJECT CARD -->
+          <article class="project-card" data-category="2d">
+            <div class="project-media">
+              <img src="Asset/GameCover/Recursive Backtracking.avif" alt="Project screenshot" />
+            </div>
+            <div class="project-info">
+              <h3>PROCEDURAL MAZE GENERATION</h3>
+              <p>Unity-built maze generation system implementing recursive backtracking with coroutine-based animation, visualizing algorithmic thinking in real-time.</p>
+              <div class="project-tags">
+                <span>C#</span><span>Unity</span><span>2D</span>
+              </div>
+            </div>
+            <div class="project-hover">
+              <a href="https://github.com/EmmyAkine/Procedural-Maze-Generation" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+            </div>
+          </article>
+
+          <!-- 3D PROJECTS -->
+          <!-- PROJECT CARD -->
+          <article class="project-card" data-category="3d">
+            <div class="project-media">
+              <img src="Asset/GameCover/Kitchen-chaos.avif" alt="Project screenshot" />
+              
+            </div>
+            <div class="project-info">
+              <h3>KITCHEN CHAOS (Guided Project by CodeMonkey)</h3>
+              <p>Unity-based cooking simulator developed as a guided learning project, featuring a decoupled C# architecture, event-driven interactions, and ScriptableObject-driven recipes.</p>
+              <div class="project-tags">
+                <span>C#</span><span>Unity</span><span>3D</span>
+              </div>
+            </div>
+            <div class="project-hover">
+                <a href="https://github.com/EmmyAkine/Kitchen-Chaos" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
             </div>
           </article>
 
           <!-- PROJECT CARD -->
           <article class="project-card" data-category="3d">
             <div class="project-media">
-              <img src="https://picsum.photos/800/600?random=2" alt="Project screenshot" />
-              <div class="project-hover">
-                <span>View Case Study →</span>
-              </div>
+              <img src="Asset/GameCover/Ice-Runner.avif" alt="Project screenshot" />
+              
             </div>
             <div class="project-info">
-              <h3>NEON STRIKE</h3>
-              <p>Fast‑paced cyberpunk action prototype focusing on responsive combat systems.</p>
+              <h3>ICE-RUNNER <span style="font-weight: lighter; color: var(--muted);">(Guided Project by Brackey)</span></h3>
+              <p>Unity-based physics runner developed as a guided learning project, featuring velocity-based movement, collision detection systems, and dynamic UI scoring.</p>
               <div class="project-tags">
                 <span>C#</span><span>Unity</span><span>3D</span>
               </div>
+            </div>
+            <div class="project-hover">
+                <a href="https://github.com/EmmyAkine/Infinity-Runner-Prototype" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
             </div>
           </article>
         </div>
